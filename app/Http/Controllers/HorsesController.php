@@ -19,6 +19,7 @@ class HorsesController extends Controller
     }
     public function destroy($id){
         $horse=Horse::find($id);
+
         $horse->delete();
         return($this->index());
     }
